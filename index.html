@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" 
+    rel="stylesheet">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome file -->
+    <script src="https://kit.fontawesome.com/996dde0eff.js" crossorigin="anonymous"></script>
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Car Collection</title>
+</head>
+
+<body>
+    <header>
+        <div class="owl-carousel owl-theme">
+            <div class="slide slide-1">
+                <div class="slide-content"></div>
+            </div>
+            <div class="slide slide-2">
+                <div class="slide-content"></div>
+            </div>
+            <div class="slide slide-3">
+                <div class="slide-content"></div>
+            </div>
+        </div>
+
+        <div class="head">
+            <div id="lines" class="fl">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+            <div class="nav fr">
+                <ul>
+                    <li id="discount"><a href="#"><i class="fas fa-tag"></i>Discount On New Cars<i
+                                class="fas fa-greater-than"></i><i class="fas fa-greater-than"></i></a></li>
+                    <li id="signup"><a href="#"><i class="fas fa-sign-in-alt"></i>Sign Up</a></li>
+                    <li><a href="#"><input type="text" id="search" placeholder="Enter your search term..."><i
+                                class="fas fa-search" id="icon"></i></a></li>
+                    <li id="location"><a href="#"><i class="fas fa-map-marker-alt"></i>Select Your Location</a></li>
+                    <li id="login"><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="side-nav">
+            <p>MENU</p>
+            <ul>
+                <li><a href="#">New Cars</a></li>
+                <li><a href="#">Compare Cars</a></li>
+                <li><a href="#">Used Cars</a></li>
+                <li><a href="#">Sell Your Cars</a></li>
+                <li><a href="#">News And Reviews</a></li>
+                <li><a href="#">Dealers And Services</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Insurance</a></li>
+                <li><a href="#">Catchy Carz app</a></li>
+            </ul>
+        </div>
+
+        <!-- Select your location start -->
+        <div id="loc">
+            <h2>Please Tell Us Your City<i id="btn" class="fas fa-times fr"></i></h2>
+            <select name="" id="sel">
+                <option value="">select your state</option>
+                <option value="">Delhi</option>
+                <option value="">Uttar-Pradesh</option>
+                <option value="">Mumbai</option>
+                <option value="">Uttrakhand</option>
+                <option value="">MadhyaPradesh</option>
+            </select>
+        </div>
+        <!-- Select your location end -->
+
+        <!-- signup section start -->
+        <div id="sgup">
+            <h2>Sign Up<i id="btn2" class="fas fa-times fr"></i></h2>
+            <form action="index.html" method="get">
+                <p><input type="text" name="uname" id="uname" placeholder="Your Name" required></p>
+                <p><input type="email" name="uid" id="uid" placeholder="Email" required></p>
+                <p><input type="password" name="pass" id="pass" placeholder="Password" required></p>
+                <p><input type="checkbox" name="cbox" id="cbox"><span class="rem"> Remember me? </span></p>
+                <p class="btn3"><button id="btn3">SIGN UP</button></p>
+            </form>
+        </div>
+        <!-- signup section end -->
+
+        <!-- Discount on new cars section start -->
+        <div id="dis">
+            <div class="upper">
+                <h2>Get Offers & Discount of <i id="btn4" class="fas fa-times fr sp"></i></h2>
+                <p>Catchy Carz Brand VL in New York</p>
+                <select name="" id="dis-sel">
+                    <option value="">-Buying Time Period-</option>
+                    <option value="">Just Researching</option>
+                    <option value="">1 Week</option>
+                    <option value="">2 Weeks</option>
+                    <option value="">1 Month</option>
+                    <option value="">2 Months</option>
+                </select>
+                <input type="number" name="" id="" placeholder="Pin Code">
+            </div>
+            <div class="down">
+                <h2>Contact Information</h2>
+                <input type="text" name="" id="" placeholder="Name">
+                <input type="email" name="" id="" placeholder="Email">
+                <input type="number" name="" id="" placeholder="Phone">
+                <p class="para1">
+                    <input type="checkbox" name="" id="che" checked>
+                    <label for="che">I agree to Terms and Conditions</label>
+                </p>
+                <button>FIND OFFERS</button>
+            </div>
+        </div>
+        <!-- Discount on new cars section end -->
+
+        <!-- login section start -->
+        <div id="log">
+            <h2>Login</h2>
+            <form action="">
+                <p><input class="inp" type="text" name="" id="" placeholder="Email"></p>
+                <p><input class="inp" type="password" name="" id="" placeholder="Password"></p>
+                <p class="para2"><input type="checkbox" name="" id="lche">
+                    <label for="lche">Remember me</label>
+                </p>
+                <button id="btn5">Login</button>
+            </form>
+        </div>
+        <!-- login section end -->
+
+        <!-- banner text section start -->
+        <div class="banner-text">
+            <p><a href="#"><span class="family"> CATCHY</span> <span class="color1">CARZ</span></a></p>
+            <p class="btext1">COME LOOK AT THE SELECTION!</p>
+            <p class="btext2">Eye it – try it – buy it!</p>
+            <select name="" id="s1">
+                <option value="">Brands</option>
+                <option value="">Abc</option>
+                <option value="">Abd</option>
+                <option value="">Adf</option>
+                <option value="">BMW</option>
+            </select>
+            <select name="" id="s2">
+                <option value="">Budget</option>
+                <option value="">0</option>
+                <option value="">10,000</option>
+                <option value="">1,00,000</option>
+                <option value="">5,00,000</option>
+                <option value="">10,00,000</option>
+                <option value="">50,00,000</option>
+            </select>
+            <button>Find Car</button>
+        </div>
+        <!-- banner text section end-->
+    </header>
+
+    <!-- Feature section start -->
+    <div class="feature-section">
+        <h1>FEATURED CARS</h1>
+        <div id="tab">
+            <ul>
+                <li id="tbtn1" onclick="tab(1)" class="fl">UPCOMING CARS</li>
+                <li id="tbtn2" onclick="tab(2)">POPULAR</li>
+                <li id="tbtn3" onclick="tab(3)" class="fr1">JUST LAUNCHED</li>
+            </ul>
+        </div>
+
+
+        <!-- upcoming car section start -->
+        <div id="upcoming-car">
+            <div id="up-Product">
+                <div id="pro1" class="fl">
+                    <div id="p1up">
+                        <img src="images/f1.jpg">
+                    </div>
+                    <div id="p1dn">
+                        <h2>MERCEDES-BENZ C250 CDI</h2>
+                        <h3>&#8377;$ 8000 - $ 12000</h3>
+                        <p>Estimated Price</p>
+                        <h3>Mar 2017</h3>
+                        <p>Expected Launch</p>
+                    </div>
+                </div>
+
+                <div id="pro1" class="new">
+                    <div id="p1up">
+                        <img src="images/f2.jpg">
+                    </div>
+                    <div id="p1dn">
+                        <h2>AUDI A4 2.0 TDI</h2>
+                        <h3>&#8377;$ 6000 - $ 10000</h3>
+                        <p>Estimated Price</p>
+                        <h3>Mar 2017</h3>
+                        <p>Expected Launch</p>
+                    </div>
+                </div>
+
+                <div id="pro1" class="fr1">
+                    <div id="p1up">
+                        <img src="images/f3.jpg">
+                    </div>
+                    <div id="p1dn">
+                        <h2>FOED MUSTANG GT 500</h2>
+                        <h3>&#8377;$ 9000 - $ 12000</h3>
+                        <p>Estimated Price</p>
+                        <h3>Mar 2017</h3>
+                        <p>Expected Launch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- upcoming car section end -->
+
+        <!-- Popular car section start -->
+        <div id="popular-car">
+            <div id="popular-Product">
+                <div id="pro1" class="fl">
+                    <div id="p1up">
+                        <img src="images/f4.jpg">
+                    </div>
+                    <div id="p1dn">
+                        <h2>FORD MUSTANG GT 350</h2>
+                        <h3>&#8377;$ 8000 - $ 11000</h3>
+                        <p>Estimated Price</p>
+                        <h3>June 2016</h3>
+                        <p>Expected Launch</p>
+                    </div>
+                </div>
+
+                <div id="pro1" class="new">
+                    <div id="p1up">
+                        <img src="images/f5.jpeg">
+                    </div>
+                    <div id="p1dn">
+                        <h2>FERRARI F430</h2>
+                        <h3>&#8377;$ 7000 - $ 13000</h3>
+                        <p>Estimated Price</p>
+                        <h3>June 2016</h3>
+                        <p>Expected Launch</p>
+                    </div>
+                </div>
+
+                <div id="pro1" class="fr1">
+                    <div id="p1up">
+                        <img src="images/f6.jpeg">
+                    </div>
+                    <div id="p1dn">
+                        <h2>MERCEDES-BENZ C250 CDI</h2>
+                        <h3>&#8377;$ 5000 - $ 10000</h3>
+                        <p>Estimated Price</p>
+                        <h3>June 2016</h3>
+                        <p>Expected Launch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Popular car section end -->
+
+
+        <!-- just launched car section start -->
+        <div id="just-car">
+            <div id="just-Product">
+                <div id="pro1" class="fl">
+                    <div id="p1up">
+                        <img src="images/f7.jpg">
+                    </div>
+                    <div id="p1dn">
+                        <h2>BMW M4</h2>
+                        <h3>&#8377;$ 6000 - $ 11000</h3>
+                        <p>Estimated Price</p>
+                        <h3>Mar 2017</h3>
+                        <p>Expected Launch</p>
+                    </div>
+                </div>
+
+                <div id="pro1" class="new">
+                    <div id="p1up">
+                        <img src="images/f8.jpg">
+                    </div>
+                    <div id="p1dn">
+                        <h2>BMW X4 M SPORT</h2>
+                        <h3>&#8377;$ 7000 - $ 12000</h3>
+                        <p>Estimated Price</p>
+                        <h3>Mar 2017</h3>
+                        <p>Expected Launch</p>
+                    </div>
+                </div>
+
+                <div id="pro1" class="fr1">
+                    <div id="p1up">
+                        <img src="images/f9.jpg">
+                    </div>
+                    <div id="p1dn">
+                        <h2>BMW M3</h2>
+                        <h3>&#8377;$ 5000 - $ 10000</h3>
+                        <p>Estimated Price</p>
+                        <h3>Mar 2017</h3>
+                        <p>Expected Launch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- just launched car section end -->
+    </div>
+    <!-- Feature section end -->
+
+    <!-- contact section start -->
+    <div class="contact">
+        <div class="back">
+        <div class="form">
+            <h2>CHOOSE YOUR BEST CAR</h2>
+            <form action="">
+                Name <br>
+               <p><input type="text" name="" id="" placeholder="Name"></p> 
+               Email <br>
+               <p><input type="email" name="" id="" placeholder="Email"></p>
+               City <br>
+               <p>
+                   <select name="" id="">
+                       <option value="">Select state</option>
+                       <option value="">Delhi</option>
+                       <option value="">Uttarpradesh</option>
+                       <option value="">Uttrakhand</option>
+                       <option value="">Punjab</option>
+                       <option value="">Haryana</option>
+                       <option value="">Mumbai</option>
+                   </select>
+               </p>
+               <p><input type="button" value="BOOK NOW"></p>
+            </form>
+        </div>
+    </div>
+    </div>
+    <!-- contact section end -->
+
+    <!-- latest car update section start -->
+    <div class="latest-car">
+        <h2>LATEST CAR UPDATES</h2>
+        <div class="blog-section">
+            <div class="upper-section">
+                <img class="fl" src="images/banner1.jpg" alt="" width="35%" 
+                height="300px">
+                <div class="text fr1">
+                    <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque soluta rerum harum fugiat reiciendis? Veritatis deleniti iure rem officiis perferendis magni fugiat. Delectus reiciendis dolorum quasi ea eaque labore dolorem odit ipsam accusamus quod, quaerat repudiandae quia eos perspiciatis fugiat incidunt aliquid, iste maxime aliquam itaque? Alias iste nemo at doloremque iusto quas eum optio ratione ex, ipsum nostrum molestias similique. Neque deserunt molestias, cumque reiciendis pariatur, ullam aliquam quod impedit eos commodi facilis consequuntur iusto officia esse dolore fuga porro provident incidunt quas vitae quam vero? Explicabo error repellendus consequatur? Totam dolorem officiis adipisci necessitatibus perspiciatis.</p>
+                    <button>
+                        <a href="#">Read More</a>
+                    </button>
+                </div>
+            </div>
+            <div class="clr"></div>
+            <div class="bottom-section">
+                <div class="text fl">
+                    <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque soluta rerum harum fugiat reiciendis? Veritatis deleniti  Facere fugiat iure repellat nobis, repudiandae beatae consectetur ut dolores! Quibusdam soluta quis dignissimos sequi laudantium dolorum quasi ea eaque labore dolorem odit ipsam accusamus quod, quaerat repudiandae quia eos perspiciatis fugiat incidunt aliquid, iste maxime aliquam itaque? Alias iste nemo at doloremque iusto quas eum optio ratione ex, ipsum nostrum molestias similique. Neque deserunt molestias, cumque reiciendis pariatur, ullam aliquam quod impedit eos commodi facilis consequuntur iusto officia esse dolore fuga porro provident incidunt quas vitae quam vero? Explicabo error repellendus consequatur? Totam dolorem officiis adipisci necessitatibus perspiciatis.</p>
+                    <button>
+                        <a href="#">Read More</a>
+                    </button>
+                </div>
+                <img class="fr1" src="images/banner2.jpg" alt="" width="35%" height="300px">
+            </div>
+        </div>
+    </div>
+
+    <!-- latest car update section end -->
+
+
+    <!-- footer section start -->
+    <footer>
+        <div class="foot-section">
+            <div class=" col col1 fl">
+                <h3>ABOUT US</h3>
+                <ul>
+                    <li>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse voluptate velit esse.
+                    </li>
+                    <li>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+                    </li>
+                </ul>
+            </div>
+            <div class="col col2 new">
+                <h3>CONTACT INFO</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>1234k Avenue, 4th block,New York City.</li>
+                    <li><i class="fas fa-envelope-square"></i><a href="mailto:info@example.com">info@example.com</a></li>
+                    <li><i class="fas fa-phone-alt"></i>+1234 567 567</li>
+                </ul>
+            </div>
+
+            <div class="col col3 new">
+                <h3>BLOG POSTS</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p>
+                                <img class="fl" src="images/f1.jpg" alt="" width="120px" height="70px">
+                            </p>
+                            <p>
+                                <span class="fr1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, neque.</span> 
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                <img class="fl" src="images/f2.jpg" alt="" width="120px" height="70px">
+                            </p>
+                            <p>
+                                <span class="fr1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, neque.</span> 
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                <img class="fl" src="images/f3.jpg" alt="" width="120px" height="70px">
+                            </p>
+                            <p>
+                                <span class="fr1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, neque.</span> 
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clr"></div>
+            <div class="last-section">
+                <h2></h2>
+                <a href="#"> <span class="family1"> CATCHY CARZ</span>
+                    <br>
+                   <span class="small">Eye it – try it – buy it!</span> 
+                </a>
+            </div>
+
+            <p class="lpara">© 2021 Catchy Carz. All rights reserved | Design by sk04layouts</p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- footer section end -->
+
+
+    <!-- jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- custom jquery -->
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                smartSpeed: 1500,
+                autoplayHoverPause: true
+            });
+
+            $("#lines").click(function () {
+                $("#side-nav").animate({
+                    height: 'toggle',
+                    // width: 'toggle'
+                });
+            });
+
+            $("#icon").click(function () {
+                $("#search").animate({
+                    width: 'toggle'
+                });
+            });
+            $("#btn").click(function () {
+                $("#loc").slideToggle();
+            });
+            $("#location").click(function () {
+                $("#loc").slideToggle();
+            });
+
+            $("#btn2").click(function () {
+                $("#sgup").slideToggle();
+            });
+
+            $("#signup").click(function () {
+                $("#sgup").slideToggle();
+            });
+
+            $("#btn4").click(function () {
+                $("#dis").slideToggle();
+            });
+
+            $("#discount").click(function () {
+                $("#dis").slideToggle();
+            });
+
+            $("#login").click(function () {
+                $("#log").slideToggle();
+            });
+
+
+        });
+    </script>
+
+    <script>
+        function tab(numb) {
+            if (numb == 1) {
+                document.getElementById('upcoming-car').style.display = 'block';
+                document.getElementById('tbtn1').style.color = '#E16B5B';
+                document.getElementById('tbtn2').style.color = 'black';
+                document.getElementById('tbtn3').style.color = 'black';
+                document.getElementById('popular-car').style.display = 'none';
+                document.getElementById('just-car').style.display = 'none';
+            }
+            else if (numb == 2) {
+                document.getElementById('popular-car').style.display = 'block';
+                document.getElementById('tbtn2').style.color = '#E16B5B';
+                document.getElementById('tbtn1').style.color = 'black';
+                document.getElementById('tbtn3').style.color = 'black';
+                document.getElementById('upcoming-car').style.display = 'none';
+                document.getElementById('just-car').style.display = 'none';
+            }
+            else if (numb == 3) {
+                document.getElementById('upcoming-car').style.display = 'none';
+                document.getElementById('just-car').style.display = 'block';
+                document.getElementById('tbtn3').style.color = '#E16B5B';
+                document.getElementById('tbtn2').style.color = 'black';
+                document.getElementById('tbtn1').style.color = 'black';
+                document.getElementById('popular-car').style.display = 'none';
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- #E16B5B -->
+
+<!-- 'Wallpoet', cursive -->
+
+<!-- 'Ubuntu', sans-serif -->
